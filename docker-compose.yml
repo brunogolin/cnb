@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+
+  employee-jdbc:
+    image: employee-jdbc
+    ports:
+      - "8080:8080"
+    networks:
+      - employee-mysql
+    depends_on:
+      - mysqldb
+
+  mysqldb:
+    image: mysql:latest
+    networks:
+      - employee-mysql
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=admin
+      - MYSQL_DATABASE=mysql
+      - volume=./volume
+
+networks:
+  employee-mysql:
