@@ -1,7 +1,7 @@
-# CNB
+# CNB [![Version Project: 0.0.1-SNAPSHOT](https://img.shields.io/badge/Version_Project-0.0.1--SNAPSHOT-green.svg)](#)
 
-[![Version Project: 0.0.1-SNAPSHOT](https://img.shields.io/badge/Version_Project-0.0.1--SNAPSHOT-green.svg)](#)
 [![JDK compatibility: 17](https://img.shields.io/badge/JDK_compatibility-17-blue.svg)](#)
+[![Mysql: 17](https://img.shields.io/badge/Mysql-latest-blue.svg)](#)
 
 # Object
 
