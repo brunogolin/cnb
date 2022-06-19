@@ -1,4 +1,4 @@
-package com.cnb.controller;
+package com.cnb.api.v1.controller;
 
 public class ErrorResponse {
 
