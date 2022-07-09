@@ -1,6 +1,8 @@
 package com.cnb.model;
 
-public class Employee {
+import java.io.Serializable;
+
+public class Employee implements Serializable {
 
 	private String empId;
 	private String empName;

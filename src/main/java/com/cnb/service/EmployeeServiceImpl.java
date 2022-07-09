@@ -15,6 +15,9 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Autowired
 	EmployeeDao employeeDao;
 
+	@Autowired
+	private RabbitMQService rabbitMQService;
+
 	public List<Employee> getAllEmployees() {
 		List<Employee> employees = employeeDao.getAllEmployees();
 		return employees;
@@ -23,7 +26,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	public void insertEmployee(Employee employee) {
 		employeeDao.insertEmployee(employee);
-		
+		rabbitMQService.sendMessage("youtube", employee);
 	}
 
 }

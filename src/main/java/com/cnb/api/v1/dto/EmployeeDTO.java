@@ -2,8 +2,10 @@ package com.cnb.api.v1.dto;
 
 import io.swagger.annotations.ApiModel;
 
+import java.io.Serializable;
+
 @ApiModel("Employee")
-public class EmployeeDTO {
+public class EmployeeDTO implements Serializable {
 
     private String empId;
     private String empName;
